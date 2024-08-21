@@ -10,20 +10,29 @@ function App() {
     <>
       <div className="backgroud">
         <ThreeScene />
-        <div className="title">
-          <h1>Mason</h1>
-          <p className="substitle">Developer & Designer</p>
-          <div className="nav">
-            <Link className="nav-link" to="/">
-              Home
-            </Link>
-            <Link className="nav-link" to="/projects">
-              Projects
-            </Link>
-            <Link className="nav-link" to="/about">
-              About
-            </Link>
+        <div className="page-wrapper">
 
+
+
+          <div className="title">
+            <h1>Mason</h1>
+            <p className="substitle">Developer & Designer</p>
+            <div className="nav">
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
+              <Link className="nav-link" to="/projects">
+                Projects
+              </Link>
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
+
+
+            </div>
+
+          </div>
+          <div className="content-wrapper">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
@@ -31,6 +40,7 @@ function App() {
             </Routes>
           </div>
         </div>
+
       </div>
     </>
   );

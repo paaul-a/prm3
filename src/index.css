@@ -1,9 +1,7 @@
-
-
 .background {
   z-index: 0;
-  position: relative; 
-  width: 100px; 
+  position: relative;
+  width: 100px;
   height: 100px;
 }
 
@@ -24,8 +22,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.title {
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
   position: absolute;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content-wrapper {
+  padding-top: 70px;
+  margin-left: 30px;
+}
+
+.title {
+  /* position: absolute; */
   top: 20px;
   left: 20px;
   padding-left: 40px;
@@ -33,13 +45,14 @@
   /* border: 1px solid white; */
 
 }
-.title h1{
+
+.title h1 {
   color: whitesmoke;
   font-weight: lighter;
   /* padding-right: 0px; */
   font-size: 60px;
   margin-bottom: 0px;
-  
+
 
 }
 
@@ -59,9 +72,59 @@
   padding-bottom: 10px;
   transition: color 0.3s ease;
   cursor: pointer;
-  &:hover{
-    color:#606060
+
+  &:hover {
+    color: #606060
   }
+}
+
+/* 
+================================================================================
+PROJECT LINKS
+================================================================================
+*/
+
+.project-div {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  /* margin-left: 50%; */
+  margin-right: 40px;
+  padding: 30px;
+
+  /* border: 1px solid white; */
+  text-align: end;
+
+
+  &:view-transition {
+    transition: 1s;
+  }
+}
+
+.project-div {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.project-div p {
+  margin-top: 0px;
+}
+
+.project-div.visible {
+  opacity: 1;
+}
+
+.link-title {
+  color: whitesmoke;
+  font-size: xx-large;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: #606060
+  }
+
 }
 
 /* 
@@ -72,20 +135,42 @@ ABOUT PAGE
 
 .about-text {
   display: flex;
-  flex-direction: column;
-  float: right;
-  /* margin-left: 50%; */
+  flex-direction: row;
   margin-right: 40px;
   padding: 30px;
 
   color: whitesmoke;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 
-  &:view-transition{
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+
+  &:view-transition {
     transition: 1s;
   }
+
 }
 
+/* .about-text {
+  display: flex;
+  flex-direction: row;
+
+  
+} */
+
+.about-text.visible {
+  opacity: 1;
+}
+
+.headshot {
+  padding-right: 20px;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 
 
