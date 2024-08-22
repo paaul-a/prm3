@@ -22,6 +22,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.content-wrapper.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.content-wrapper.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
 .page-wrapper {
   display: flex;
   flex-direction: row;
@@ -40,7 +51,8 @@
   /* position: absolute; */
   top: 20px;
   left: 20px;
-  padding-left: 40px;
+  padding-left: 70px;
+  padding-top: 30px;
   float: right;
   /* border: 1px solid white; */
 
@@ -91,6 +103,7 @@ PROJECT LINKS
   /* margin-left: 50%; */
   margin-right: 40px;
   padding: 30px;
+  padding-right: 70px;
 
   /* border: 1px solid white; */
   text-align: end;
@@ -116,7 +129,7 @@ PROJECT LINKS
 
 .link-title {
   color: whitesmoke;
-  font-size: xx-large;
+  font-size: 45px;
   text-decoration: none;
   transition: color 0.3s ease;
   cursor: pointer;
@@ -138,9 +151,12 @@ ABOUT PAGE
   flex-direction: row;
   margin-right: 40px;
   padding: 30px;
+  padding-right: 70px;
 
   color: whitesmoke;
   /* border: 1px solid white; */
+  text-align: end;
+
 
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -163,16 +179,47 @@ ABOUT PAGE
 }
 
 .headshot {
-  padding-right: 20px;
+  padding-left: 8px;
 }
 
 .about-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 20%;
+  padding-right: 10px;
+  text-align: start;
+  /* border: 1px solid white;  */
 }
 
+.about-details h3 {
+  font-weight: lighter;
+  font-size: x-large;
+  margin-top: 0px;
+}
 
+.about details p {
+  color: rgba(245, 245, 245, 0.774);
+  text-decoration: none;
+  padding-bottom: 0px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: #606060
+  }
+}
+
+.contact-link {
+  color: rgba(245, 245, 245, 0.909); /* Match this with your theme */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-link:hover {
+  color: #606060; /* Change color on hover */
+}
 
 
 /* a {

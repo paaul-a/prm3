@@ -15,24 +15,27 @@ const About = () => {
   return (
     <>
       <div className={`about-text ${visible ? 'visible' : ''}`}>
-      <img
+
+        <div className='about-details'>
+          <h3>
+            Mason is an Atlanta-based web developer,
+            working in frontend and fullstack development implementing
+            3D animation, design and user accessibility.
+          </h3>
+          <p className='contact'>
+            <a href="mailto:paaula.mason@gmail.com" className="contact-link">
+              contact
+            </a>
+          </p>
+        </div>
+        <img
           src={myPhoto}
           alt="Headshot of Mason"
           className='headshot'
           width="300" // optional, adjust as needed
-          height="auto" // optional, adjust as needed
+          height="100%" // optional, adjust as needed
         />
-        <div className='about-details'>
-        <p>
-          Mason is an Atlanta-based web developer,
-          working in frontend and fullstack development implementing
-          3D animation, design and user accessibility.
-        </p>
-        <p>
-          contact
-        </p>
-        </div>
-       
+
 
       </div>
     </>
