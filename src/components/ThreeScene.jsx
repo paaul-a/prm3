@@ -68,7 +68,7 @@ const ThreeScene = () => {
     // Animation loop
     const animate = () => {
       requestAnimationFrame(animate);
-      time += 0.005;
+      time += 0.001;
 
       const positions = geo.getAttribute("position");
       const colorAttribute = geo.getAttribute("color");
