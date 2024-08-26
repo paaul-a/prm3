@@ -23,7 +23,7 @@ const Projects = () => {
           Dec 2023 / Capstone / Developer
         </p>
         <a 
-          href="https://odd-boy.com"
+          href="https://github.com/paaul-a/odd-boy"
           target="_blank" 
           rel="noopener noreferrer" 
           className="link-title"
@@ -34,7 +34,7 @@ const Projects = () => {
           April 2024 / Portfolio / Developer
         </p>
         <a 
-          href="https://github.com/paaul-a/ECH-Website"
+          href="https://github.com/paaul-a/ECH"
           target="_blank" 
           rel="noopener noreferrer" 
           className="link-title"
