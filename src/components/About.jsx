@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import '../index.css'; // Ensure your CSS file is imported
-import myPhoto from '../img/4T8A1138 copy 3.jpg'
+import myPhoto from '../img/4T8A1138 copy-2 copy 2.jpg'
 import email from '../img/ig.png'
 
 const About = () => {
