@@ -23,7 +23,7 @@ const Projects = () => {
           Dec 2023 / Capstone / Developer
         </p>
         <a 
-          href="https://github.com/paaul-a/odd-boy"
+          href="http://www.odd-boy.com/"
           target="_blank" 
           rel="noopener noreferrer" 
           className="link-title"
